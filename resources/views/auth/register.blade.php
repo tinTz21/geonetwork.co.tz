@@ -11,7 +11,7 @@
                     Fpr registration please ask admin: <br>
                     Name: Augustino Emanuel
                     Phone: +255 758 477 593;
-                    {{-- 
+                    
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
 
@@ -73,7 +73,7 @@
                             </div>
                         </div>
                     </form>
-                    --}}
+                    
                 </div>
             </div>
         </div>

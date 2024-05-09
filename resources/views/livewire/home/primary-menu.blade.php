@@ -3,7 +3,7 @@
     <style type="text/css">
         /* Dropdown Button */
 .dropbtn {
-  background-color: #FFF;
+  background-color: #E9D097;
   color: #017C7A;
   padding: 5px;
   border: none;
@@ -19,7 +19,7 @@
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f1f1f1;
+  background-color: #E9D097;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -42,10 +42,10 @@
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {background-color: #FFF;}
     </style>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg " style="background-color: #E9D097;">
             <div class="container-fluid" style="padding: 1em;">
                 <a class="navbar-brand" href="/">
-                  <img src="/images/logo.jpg" width="100em">
+                  <img src="/images/logo.PNG" width="180em" height="50em">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -55,7 +55,7 @@
                     <ul class="navbar-nav me-auto  mb-2 mb-lg-0 ">
                       <li class="nav-item">
                         <a class="nav-link" style="color: #017C7A;" aria-current="page" href="{{route('home-about')}}">
-                            <b>ABOUT GLOBEC</b>
+                            <b>ABOUT</b>
                         </a>
                       </li>
                       <li class="nav-item">
@@ -65,7 +65,7 @@
                       </li>
                       <li class="nav-item">
 
-                        {{-- <a class="nav-link" style="color: #017C7A;" href="{{route('home-product')}}"><b>PRODUCTS AND SOLUTIONS</b></a> --}}
+                        {{-- <a class="nav-link" style="color: #E9D097;" href="{{route('home-product')}}"><b>PRODUCTS AND SOLUTIONS</b></a> --}}
                         <div class="dropdown">
                           <button class="dropbtn">PRODUCTS AND SOLUTIONS</button>
                           <div class="dropdown-content">

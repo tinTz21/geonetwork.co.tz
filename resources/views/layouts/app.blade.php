@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Globec Scientific Ltd') }}</title>
+    <title>{{ config('app.name', 'Geonetwork Limited') }}</title>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -19,12 +19,12 @@
 </head>
 <body>
     <div id="app">
-        <div class="bg-light">
+        <div style="background-color: #E1C78C">
             {{-- Maranatha --}}
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                    <div class="container-fluid" style="padding: 1em;">
+            <nav class="navbar navbar-expand-lg" style="background-color: #E1C78C;">
+                    <div class="container-fluid" style="padding: 0em;">
                         <a class="navbar-brand" href="{{route('home')}}">
-                          <img src="/images/logo.jpg" width="100em">
+                          <img src="/images/logo.PNG" width="200em" height="50em">
                         </a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                             <span class="navbar-toggler-icon"></span>

@@ -6,7 +6,7 @@
                 <div class="row">
                     <div class="col-md-3 ">
                         <h3 class="d-flex justify-content-center" style="color: #017C7A;">
-                            About Globec
+                            About Geonetwork ltd
                         </h3>
                         <p class="d-flex justify-content-center" style="padding-left:2em">
                             {!! Illuminate\Support\Str::limit($about->description, 300) !!}
@@ -19,7 +19,7 @@
                         <p> 
                             <div>
                                 <a href="{{route('home-about')}}" style="text-decoration: none; padding-left: 1em; color: #33BAFA;" class="d-flex justify-content-left">
-                                    <i class="bi-dot"></i> About Globec
+                                    <i class="bi-dot"></i> About Geonetwork ltd
                                 </a>
                             </div>
 
@@ -91,7 +91,7 @@
             <hr>
             <div class="row">
                 <div class="col-md-9">
-                    {{ '@ '. now()->year .' | All Rights Reserved by Globec Scientific Ltd '}} 
+                    {{ '@ '. now()->year .' | Geonetwork ltd Ltd '}} 
                     <!-- <a href="#" style="text-decoration: none;">Privacy & Policy</a>  -->
                 </div>
                 
