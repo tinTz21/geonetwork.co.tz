@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-9 bg-light" style="margin-top: 1em; padding: 1em;">
             <h3>
-                Add News
+                Add Gallery
             </h3>
             <br>
             <form method="POST" action="{{route('store-new-news')}}" enctype="multipart/form-data">
@@ -13,11 +13,11 @@
                 <input type="text" class="form-control" name="name" placeholder="News Title" required>
                 <br>
 
-                <div class="form-group">
+                {{-- <div class="form-group">
                     <label>Add Content</label>
                     <textarea class="tinymce-editor form-control" name="description"></textarea>
-                </div>
-                <br>
+                </div> --}}
+                
                 <input class="form-control" type="file" name="image">
                 <br>
                 <a class="btn btn-outline-secondary rounded-pill" href="{{route('products')}}">

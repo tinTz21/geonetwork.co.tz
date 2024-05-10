@@ -9,7 +9,7 @@
                 <div class="row">
                     <div class="col-md-8">
                         <h3 style="color: #017C7A;">
-                            {{$product_sub_categories->name .' Products and Solutions'}}
+                            {{$product_sub_categories->name .' Services'}}
                         </h3>
                     </div>
 
@@ -22,7 +22,7 @@
                     
                     <div class="col-md-2 d-flex justify-content-center">
                         <a href="{{route('add-product')}}" class="btn btn-outline-secondary rounded-pill">
-                            <i class="bi-cart"></i> Add Product
+                            <i class="bi-cart"></i> Add Service
                         </a>
                     </div>
                 </div>  
@@ -33,7 +33,7 @@
                 <thead >
                 <tr class="text-secondary">
                 <th  style=" color: #707070 !important; "> No. </th>
-                <th  style=" color: #707070 !important; "> Product </th>
+                <th  style=" color: #707070 !important; "> Service </th>
                 <th  style=" color: #707070 !important; "> Description </th>
                 <th  style=" color: #707070 !important; "> Created At </th>
                 <th  style=" color: #707070 !important;"> View </th>

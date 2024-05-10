@@ -31,18 +31,18 @@
 
                             <div>
                                 <a href="{{route('home-product')}}" style="text-decoration: none; padding-left: 1em; color: #33BAFA;" class="d-flex justify-content-left">
-                                    <i class="bi-dot"></i> Products and Solutions
+                                    <i class="bi-dot"></i> Services
                                 </a>
                             </div>
 
                             <div>
-                                <a href="{{route('home-career')}}" style="text-decoration: none; padding-left: 1em; color: #33BAFA;" class="d-flex justify-content-left">
+                                <a href="{{-- route('home-career') --}}" style="text-decoration: none; padding-left: 1em; color: #33BAFA;" class="d-flex justify-content-left">
                                     <i class="bi-dot"></i> Career
                                 </a>
                             </div>
                             <div>
                                 <a href="{{route('home-news')}}" style="text-decoration: none; padding-left: 1em; color: #33BAFA;" class="d-flex justify-content-left">
-                                    <i class="bi-dot"></i> News
+                                    <i class="bi-dot"></i> Gallery
                                 </a>    
                             </div>
                             
@@ -68,7 +68,7 @@
 
                     <div class="col-md-3">
                         <h3 class="d-flex justify-content-center" style="color: #017C7A;">
-                            Latest Products
+                            Company Services
                         </h3>
                        @foreach($products as $product)
                             <a href="{{route('product_quote',$product->id)}}" class="d-flex justify-content-left" style="text-decoration: none; padding-left: 1em; color: #33BAFA;">

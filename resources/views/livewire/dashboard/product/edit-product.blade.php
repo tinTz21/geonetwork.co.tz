@@ -6,12 +6,12 @@
             @if($this->next == '0')
             <div class="col-md-9 bg-light" style="margin-top: 1em; padding: 1em;">
                 <h3>
-                    Edit Product/Solution
+                    Edit Service
                 </h3>
                 <br>
                 <form wire:submit.prevent="storeProduct({{$this->product_id}})" {{-- method="POST" action="{{route('store_product',$product->id)}}" enctype="multipart/form-data" --}}>
                     {{-- @csrf --}}
-                    <input type="text" class="form-control" wire:model="product_name" value="{{@$product->name}}" placeholder="Edit Product/Solution" required>
+                    <input type="text" class="form-control" wire:model="product_name" value="{{@$product->name}}" placeholder="Edit Service" required>
                     <br>
  
                     <select class="form-control" wire:model="category_id">

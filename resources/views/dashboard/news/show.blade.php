@@ -11,7 +11,7 @@
 
                <div class="col-md-6">
                    <h3 class="d-flex justify-content-center">
-                       Are you sure you want to delete this news?
+                       Are you sure you want to delete this?
                    </h3>
                    <div class="row" style="padding: 2em">
                        <div class="col-md-6">

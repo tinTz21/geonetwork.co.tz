@@ -19,7 +19,7 @@
                         <div class="col-md-4" style="margin-top: 1em;">
                             <div class="card">
                                 <div class="card-header">
-                                    Products & Solutions ( {{\App\Models\Product::all()->count()}} )
+                                    Geonetwork Services ( {{\App\Models\Product::all()->count()}} )
                                 </div>
                                 <div class="card-body">
                                     <div class="col-md-12">
@@ -45,12 +45,12 @@
                         <div class="col-md-4" style="margin-top: 1em;">
                             <div class="card">
                                 <div class="card-header">
-                                    Customers ( {{\App\Models\Quote::all()->count()}} )
+                                    Customers-demo ( {{\App\Models\Quote::all()->count()}} )
                                 </div>
                                 <div class="card-body">
                                     @foreach($customers as $customer)
                                         <div class="col-md-12">
-                                            <a href="{{route('show-customers',$customer->id)}}" style="text-decoration: none;">
+                                            <a href="{{-- route('show-customers',$customer->id) --}}" style="text-decoration: none;">
                                                 {{ Illuminate\Support\Str::limit($customer->name, 30) }}
                                                  &nbsp; <i class="bi-eye" style="font-size: 1em;"></i>
                                             </a>
@@ -66,7 +66,7 @@
                         <div class="col-md-4" style="margin-top: 1em;">
                             <div class="card">
                                 <div class="card-header">
-                                    News ( {{\App\Models\News::all()->count()}} )
+                                    Gallery ( {{\App\Models\News::all()->count()}} )
                                 </div>
                                 <div class="card-body">
                                     @foreach($news as $blog)

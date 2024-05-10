@@ -62,7 +62,7 @@
         <div class="row">
             <div class="col-md-12" >
                 <h3 style=" color: #017C7A;">
-                   Product & Solution Categories
+                   Services
                 </h3>
             </div>
 
@@ -150,7 +150,7 @@
     <div class="container-fluid bg-light" style="padding: 2em; margin-top: 1em;">
         <div class="container-fluid">
             <h3 style="color: #017C7A;">
-                News
+                Gallery
             </h3>
         </div>
         <div class="row d-flex justify-content-center" style="padding-top: 0.2em;">
@@ -166,10 +166,11 @@
                         <h5 class="card-title d-flex justify-content-center">
                             {{ Illuminate\Support\Str::limit($blog->name, 28) }}
                         </h5>
-                        <p class="card-text d-flex justify-content-center" >
+                        {{-- <p class="card-text d-flex justify-content-center" >
                             {!! Illuminate\Support\Str::limit($blog->description, 183) !!}
                         </p>
                         <a href="{{route('home-show-news',$blog->id)}}" class="btn btn-outline-secondary rounded-pill" style="border-color: #33BAFA; color: #33BAFA;">Learn More...</a>
+                        --}}
                       </div>
                     </div>
                </div>
@@ -208,7 +209,7 @@
 
                   <div class="card-body">
                     <h4 class="d-flex justify-content-center" style="color: #017C7A;">
-                        Iren C Somebody
+                        Mr. Joel
                     </h4>
                     <p class="d-flex justify-content-center" style="color: #017C7A;">
                         <i class="bi-dot"></i>Biomedical Scientist
@@ -230,7 +231,7 @@
 
                   <div class="card-body">
                     <h4 class="d-flex justify-content-center" style="color: #017C7A;">
-                        Customer Debora
+                        Bariki Elilaki
                     </h4>
                     <p class="d-flex justify-content-center" style="color: #017C7A;">
                         <i class="bi-dot"></i>Marketing Manager

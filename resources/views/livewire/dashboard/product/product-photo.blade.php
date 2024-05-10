@@ -4,7 +4,7 @@
             @csrf 
             <div class="col-md-12">
                 <label>
-                    Add Product Photo
+                    Add Service's photo.
                 </label>
                 <input class="form-control" type="file" name="image"> 
                 <button class="btn btn-outline-secondary rounded-pill" type="submit">

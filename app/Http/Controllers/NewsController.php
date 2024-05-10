@@ -53,7 +53,6 @@ class NewsController extends Controller
     public function store_new_news(Request $request){
         $news = $request->validate([
             'name'=>'required',
-            'description'=>'required',
             'image'=>'required',
         ]);
 
@@ -68,7 +67,7 @@ class NewsController extends Controller
         }
 
         $news = News::create(
-            ['name'=>$request->name, 'description'=>$request->description, 'creator_id'=>Auth::user()->id,'updator_id'=>Auth::user()->id,'image'=>$image]
+            ['name'=>$request->name, 'creator_id'=>Auth::user()->id,'updator_id'=>Auth::user()->id,'image'=>$image]
         );
         return redirect()->route('more-news',$news->id);
     }
@@ -96,7 +95,7 @@ class NewsController extends Controller
         }
         $news = News::updateOrCreate(
             ['id'=>$id],
-            ['name'=>$request->name, 'description'=>$request->description, 'creator_id'=>Auth::user()->id,'updator_id'=>Auth::user()->id, 'image'=>$image]
+            ['name'=>$request->name, 'creator_id'=>Auth::user()->id,'updator_id'=>Auth::user()->id, 'image'=>$image]
         );
         return redirect()->route('more-news',$news->id);
     }

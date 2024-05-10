@@ -4,12 +4,12 @@
                 @if($this->next == '0')
                 <div class="col-md-9 bg-light" style="margin-top: 1em; padding: 1em;">
                 <h3>
-                    Add Product/Solution
+                    Add Service
                 </h3>
                 <br>
                 <form wire:submit.prevent="storeProduct"  {{--  method="POST" action="{{route('store_product')}}"  enctype="multipart/form-data" --}}>
                     {{-- @csrf --}}
-                    <input type="text" class="form-control" wire:model="product_name" placeholder="Add Product/Solution" required>
+                    <input type="text" class="form-control" wire:model="product_name" placeholder="Add Service" required>
                     <br>
  
                     <select class="form-control" wire:model="category_id">

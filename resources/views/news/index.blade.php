@@ -3,7 +3,7 @@
 @section('content')
 <div class="container-fluid bg-light" style="margin-top: 1em; color: #017C7A;">
     <h3 style=" padding: 10px;">
-        News
+        Gallery
     </h3>
     <div class="row">
         @foreach($news as $blog)
@@ -15,10 +15,10 @@
                         <h5 class="card-title">
                             {{ Illuminate\Support\Str::limit($blog->name, 30) }}
                         </h5>
-                        <p class="card-text">
+                        {{-- <p class="card-text">
                             {!! Illuminate\Support\Str::limit($blog->description, 150) !!}
-                        </p>
-                        <a href="{{route('home-show-news',$blog->id)}}" class="btn btn-outline-secondary rounded-pill" style="border-color: #33BAFA; color: #33BAFA;">Learn More...</a>
+                        </p> --}}
+                        <a href="{{route('home-show-news',$blog->id)}}" class="btn btn-outline-secondary rounded-pill" style="border-color: #33BAFA; color: #33BAFA;">View</a>
                       </div>
                     </div>
                

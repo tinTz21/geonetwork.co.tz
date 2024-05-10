@@ -11,20 +11,22 @@
             Contact Us
         </a><br>
         <a href="{{route('products')}}" style="padding: 1em; text-decoration: none;" class="text-light">
-            Products & Solutions
+            Services
         </a><br>
-        <a href="{{route('career')}}" style="padding: 1em; text-decoration: none;" class="text-light">
+        {{-- <a href="{{route('career')}}" style="padding: 1em; text-decoration: none;" class="text-light">
             Careers
         </a><br>
+        --}}
         <a href="{{route('news')}}" style="padding: 1em; text-decoration: none;" class="text-light">
-            News 
+            Gallery 
         </a><br>
         <a href="{{route('testimonies')}}" style="padding: 1em; text-decoration: none;" class="text-light">
             Testimonials
         </a><br>
-        <a href="{{route('customers')}}" style="padding: 1em; text-decoration: none;" class="text-light">
+        {{-- <a href="{{route('customers')}}" style="padding: 1em; text-decoration: none;" class="text-light">
             Customers
         </a><br>
+        --}}
         @if(Auth::user()->type == 'Admin')
         <a href="{{route('staffs')}}" style="padding: 1em; text-decoration: none;" class="text-light">
             Manage Staff(s)

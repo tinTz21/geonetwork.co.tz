@@ -9,7 +9,7 @@
             <div class="row">
                 <div class="col-md-9">
                     <h3 style="color: #017C7A;">
-                        News
+                        Gallery
                     </h3>
                 </div>
                 <div class="col-md-3">
@@ -27,8 +27,7 @@
                 <thead >
                 <tr class="text-secondary">
                 <th  style=" color: #707070 !important; "> No. </th>
-                <th  style=" color: #707070 !important; "> News </th>
-                <th  style=" color: #707070 !important; "> Description </th>
+                <th  style=" color: #707070 !important; "> title </th>
                 <th  style=" color: #707070 !important; "> Created At </th>
                 <th  style=" color: #707070 !important;"> View </th>
                 </tr>
@@ -39,9 +38,6 @@
                           <td data-label="Level" style=" color: #707070 !important; "> {{@$loop->iteration}} </td>
                           <td data-label="Level" style=" color: #707070 !important; "> 
                             {{ Illuminate\Support\Str::limit($blog->name, 30) }}
-                            </td>
-                          <td data-label="Level" style=" color: #707070 !important; ">
-                            {!! Illuminate\Support\Str::limit($blog->description, 150) !!}
                             </td>
                           <td data-label="Level" style="width: 8em; color: #707070 !important; "> {{@$blog->created_at->format('d-m, Y')}} </td>
                           <td data-label="Level" style=" color: #707070 !important; "> 

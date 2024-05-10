@@ -6,7 +6,7 @@
                 <div class="row">
                     <div class="col-md-8">
                         <h3 style="color: #017C7A;">
-                            Product Categories
+                            Service Categories
                         </h3>
                     </div>
                     <div class="col-md-2">
@@ -18,7 +18,7 @@
                     </div>
                     <div class="col-md-2">
                         <a href="{{route('add-product')}}" class="btn btn-outline-secondary rounded-pill">
-                            <i class="bi-cart"></i> Add Product
+                            <i class="bi-cart"></i> Add Service
                         </a>
                     </div>
                 </div>  

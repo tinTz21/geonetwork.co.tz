@@ -8,7 +8,7 @@
             <div class="container-fluid bg-light" style="padding: 2em; margin-top: 1em;">
             <div class="container-fluid">
                 <h3 style="color: #017C7A;">
-                    News
+                    Gallery
                 </h3>
             </div>
             

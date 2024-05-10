@@ -6,20 +6,20 @@
 
         <div class="col-md-12">
             <h3>
-                Edit News
+                Edit Gallery
             </h3>
         <form method="POST" action="{{ route('store-news',@$news->id) }}" enctype="multipart/form-data">
             @csrf
             <h3>
                 <input type="text" name="name" value="{{@$news->name}}" class="form-control">
             </h3>
-            <div class="form-group">
+            {{-- <div class="form-group">
                 <label>Edit Content</label>
                 <textarea class="tinymce-editor form-control" name="description">
                     {!! @$news->description !!}
                 </textarea>
             </div>
-            <br>
+            <br> --}}
             <input type="file" class="form-control" name="image" required>
             <br>
             <a href="{{route('more-news',@$news->id)}}" class="btn btn-outline-secondary rounded-pill">

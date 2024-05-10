@@ -41,7 +41,13 @@
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {background-color: #FFF;}
-    </style>
+
+@media only screen and (min-width: 1224px){
+    .center-menu{
+        padding-left: 15em;
+    }
+}
+</style>
     <nav class="navbar navbar-expand-lg " style="background-color: #E9D097;">
             <div class="container-fluid" style="padding: 1em;">
                 <a class="navbar-brand" href="/">
@@ -51,23 +57,27 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse center-menu" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto  mb-2 mb-lg-0 ">
                       <li class="nav-item">
                         <a class="nav-link" style="color: #017C7A;" aria-current="page" href="{{route('home-about')}}">
-                            <b>ABOUT</b>
+                            <b>About Us</b>
                         </a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link"  style="color: #017C7A;" href="{{route('home-contact')}}">
-                            <b>CONTACT US</b>
+                            <b>Contact Us</b>
                         </a>
                       </li>
                       <li class="nav-item">
 
                         {{-- <a class="nav-link" style="color: #E9D097;" href="{{route('home-product')}}"><b>PRODUCTS AND SOLUTIONS</b></a> --}}
                         <div class="dropdown">
-                          <button class="dropbtn">PRODUCTS AND SOLUTIONS</button>
+                          <button class="dropbtn">
+                              <b>
+                                  Visit Our Services
+                              </b>
+                          </button>
                           <div class="dropdown-content">
                             @foreach(\App\Models\ProductCategory::all() as $menu)
                                 <a href="{{route('category',$menu->id)}}">
@@ -79,12 +89,12 @@
                         </div>
 
                       </li>
-                      <li class="nav-item">
+                      {{-- <li class="nav-item">
                         <a class="nav-link" style="color: #017C7A;" href="{{route('home-career')}}"><b>CAREERS</b></a>
-                      </li>
+                      </li> --}}
                       <li class="nav-item">
                         <a class="nav-link" style="color: #017C7A;" href="{{route('home-news')}}">
-                            <b>NEWS</b>
+                            <b>Gallery</b>
                         </a>
                       </li>
                     </ul>
