@@ -21,13 +21,15 @@
         @vite(['resources/sass/app.scss', 'resources/js/app.js'])
         @livewireStyles
     </head>
-    <body> 
-        <div class="container-fluid " style="background-color: #0071C1;">
-            @livewire('home.secondary-menu')
-            @livewire('home.primary-menu')
-            @livewire('home.show-home')
-            @livewire('home.footer')
-        </div>
+    <body class="col-md-12" style="margin-right: 0em;"> 
+        
+            <div class="col-md-12">
+                {{-- @livewire('home.secondary-menu') --}}
+                @livewire('home.primary-menu')
+                @livewire('home.show-home')
+                @livewire('home.footer')
+            </div>
+
         @livewireScripts
     </body>
 </html>

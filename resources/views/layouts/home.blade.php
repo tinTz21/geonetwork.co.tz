@@ -23,7 +23,7 @@
     </head>
     <body> 
         <div class="container-fluid " style="background-color: #017C7A;">
-            @livewire('home.secondary-menu')
+            @livewire('home.secondary-menu')           
             @livewire('home.primary-menu')
             @yield('content')
             @livewire('home.footer')
