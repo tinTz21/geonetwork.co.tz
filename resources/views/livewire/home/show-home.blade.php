@@ -27,12 +27,12 @@
 
             <div class="container-fluid d-flex justify-content-center">
                 <div class="col-md-6 d-flex justify-content-end">
-                    <a href="/" class="btn btn-success btn-lg" style="border-radius: 3em; padding-right: 1em;">
-                        SEE WORKS
+                    <a href="{{route('home-about')}}" class="btn btn-success btn-lg" style="border-radius: 3em; padding-right: 1em;">
+                        ABOUT US
                     </a>
                 </div>
                 <div class="col-md-6">
-                    <a href="/" class="btn btn-danger btn-lg" style="border-radius: 3em;">
+                    <a href="{{route('home-contact')}}" class="btn btn-danger btn-lg" style="border-radius: 3em;">
                         CONTACT US
                     </a>
                 </div>

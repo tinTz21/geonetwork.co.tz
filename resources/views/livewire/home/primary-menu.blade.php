@@ -6,7 +6,7 @@
   background-color: transparent;
   color: #FFFFFF;
   padding: 5px;
-  border: none;
+  border: none; 
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -61,7 +61,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse center-menu d-flex justify-content-end" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
                     <ul class="navbar-nav">
                       <li class="nav-item">
                         <a class="nav-link" style="color: #FFFFFF;" aria-current="page" href="{{route('home-about')}}">
