@@ -1,4 +1,5 @@
 <div wire:poll.visible style="margin-top: 0em;" >
+
 <style type="text/css">
     .i-circle {
         display: inline-block;
@@ -11,12 +12,183 @@
         height: 30px;
         text-align: center;
     }
+
+    .dropbtn {
+  background-color: transparent;
+  color: #FFFFFF;
+  padding: 5px;
+  border: none; 
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #357476;
+  color: #FFFFFF;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: #FFFFFF;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #000000;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #000;}
+
+
+    nav {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+  }
+  
+  ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  ul li {
+    margin-right: 20px;
+  }
+  
+  ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  ul li a:hover {
+    color: lightgreen;
+  }
+  
+  .checkbtn {
+    font-size: 30px;
+    color: red;
+    cursor: pointer;
+    display: none;
+  }
+  
+  #check {
+    display: none;
+  }
+  
+  @media (max-width: 768px) {
+    .checkbtn {
+      display: block;
+      order: 1;
+      margin-right: 20px;
+    }
+  
+    ul {
+      position: fixed;
+      top: 8px;
+      right: -100%;
+      background-color: #125660;
+      width: 100%;
+      height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.3s;
+    }
+  
+    ul li {
+      margin: 20px 0;
+    }
+  
+    ul li a {
+      font-size: 20px;
+    }
+  
+    #check:checked ~ ul {
+      right: 0;
+    }
+  }
+
 </style>
     {{-- Close your eyes. Count to one. That is how long forever feels. --}}
+
+    
+
     <div class="container-fluid" >
         <!-- Slider div -->
         <div class="row image-fluid d-block" style="padding-top: 7em; background-image: url('/uploads/front/front2.jpg'); background-size: 100%; box-shadow: inset 10px 0 40px 1000px rgba(25, 100, 100, 0.7);">
-            <div class="col-md-12 d-flex justify-content-center">
+            <nav style="margin-top: -5em;">
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <label class="logo">Geo Network ltd</label>
+                <ul>
+                    <li>
+                            <a  style="color: #FFFFFF;" aria-current="page" href="{{route('home-about')}}">
+                                <b>ABOUT</b>
+                            </a>
+                              </li>
+                              <li>
+                                <a   style="color: #FFFFFF;" href="{{route('home-contact')}}">
+                                    <b>CONTACT US</b>
+                                </a>
+                              </li>
+                              <li>
+
+                                {{-- <a  style="color: #FFFFFF;" href="{{route('home-product')}}"><b>PRODUCTS AND SOLUTIONS</b></a> --}}
+                                <div class="dropdown" style="margin-top: -3em">
+                                  <button class="dropbtn">
+                                      <b>
+                                          VISIT OUR SERVICES
+                                      </b>
+                                  </button>
+                                  <div class="dropdown-content">
+                                    @foreach(\App\Models\ProductCategory::all() as $menu)
+                                        <a href="{{route('category',$menu->id)}}">
+                                           <i class="bi bi-bookmarks"></i>
+                                            {{ Illuminate\Support\Str::limit($menu->name, 22) }}
+                                        </a>
+                                    @endforeach
+                                  </div>
+                                </div>
+
+                              </li>
+                              {{-- <li>
+                                <a  style="color: #017C7A;" href="{{route('home-career')}}"><b>CAREERS</b></a>
+                              </li> --}}
+                              <li>
+                                <a  style="color: #FFFFFF;" href="{{route('home-news')}}">
+                                    <b>GALLERY</b>
+                                </a>
+                              </li>
+                </ul>
+            </nav>
+            <div class="col-md-12 d-flex justify-content-center" style="padding-top: 7em;">
                 <img src="/images/logo.PNG" width="220em" height="70em">
             </div>
             <div class="container-fluid d-flex justify-content-center" style="padding:4em">

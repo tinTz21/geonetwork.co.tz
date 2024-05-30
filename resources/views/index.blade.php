@@ -6,6 +6,8 @@
         <title>Globec Scientists</title>
         <!-- Fonts -->
         <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
         <!-- Styles -->
         <style>
             <!-- Scripts -->
@@ -25,7 +27,7 @@
         
             <div class="col-md-12">
                 {{-- @livewire('home.secondary-menu') --}}
-                @livewire('home.primary-menu')
+                 {{-- @livewire('home.primary-menu') --}} 
                 @livewire('home.show-home')
                 @livewire('home.footer')
             </div>

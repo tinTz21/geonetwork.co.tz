@@ -51,7 +51,7 @@
 </style>
     <nav class="navbar navbar-expand-lg " style="background-image: url('/uploads/front/front2.jpg'); background-position-y: 200em; box-shadow: inset 10px 0 40px 1000px rgba(25, 100, 100, 0.7);">
             <div class="container-fluid" style="padding: 1em;">
-                <a href="/" class="navbar-brand text-light" style="font-size: 1.6em; font-weight: 300px;">
+                <a href="/" class="navbar-brand text-light" style="font-size: 1.8em; font-weight: 300px;">
                         <b>
                             Geo Network ltd
                         </b>
@@ -61,8 +61,8 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                    <ul class="navbar-nav">
+                <div class="collapse navbar-collapse " style="padding-left: 50%;" id="navbarSupportedContent">
+                    <ul class="navbar-nav  me-auto mb-2 mb-lg-0 text-right">
                       <li class="nav-item">
                         <a class="nav-link" style="color: #FFFFFF;" aria-current="page" href="{{route('home-about')}}">
                             <b>ABOUT</b>
@@ -76,7 +76,7 @@
                       <li class="nav-item">
 
                         {{-- <a class="nav-link" style="color: #FFFFFF;" href="{{route('home-product')}}"><b>PRODUCTS AND SOLUTIONS</b></a> --}}
-                        <div class="dropdown">
+                        <div class="dropdown" style="margin-top: 0.2em">
                           <button class="dropbtn">
                               <b>
                                   VISIT OUR SERVICES
