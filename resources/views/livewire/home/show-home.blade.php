@@ -203,16 +203,18 @@
                         ABOUT US
                     </a>
                 </div>
-                <div class="col-md-6">
-                    <a href="{{route('home-contact')}}" class="btn btn-danger btn-lg" style="border-radius: 3em;">
+
+                <div class="col-md-6" style="padding-left: 1em;">
+                    <a href="{{route('home-contact')}}" class="btn btn-danger btn-lg" style="border-radius: 3em; ">
                         CONTACT US
                     </a>
                 </div>
             </div>
-            <div class="col-md-12 d-flex justify-content-center" style="padding-top: 8em; padding-bottom: 2em;">
-                <p>
-                    Down
-                </p>
+            <div class="col-md-12 d-flex justify-content-center  text-light" style="padding-top: 8em; padding-bottom: 2em;">
+                <a href="#down" class="text-light">
+                    Down 
+                    <i class="bi-arrow-down-circle"></i>
+                </a>
             </div>
         </div>
         <!-- End slider div -->
@@ -702,7 +704,7 @@
         </div>
     </div>
 
-    <div class="container-fluid bg-light" style="padding: 2em; margin-top: 1em;">
+    <div class="container-fluid bg-light" id="down" style="padding: 2em; margin-top: 1em;">
         <div class="container-fluid">
             <h3 style="color: #017C7A;">
                 Gallery
