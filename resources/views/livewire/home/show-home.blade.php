@@ -650,7 +650,7 @@
     </div>
 
 
-    <div class="container-fluid" style=" margin-top: 1em; background-image: url('/uploads/front/8245.jpg'); background-size: 100%; box-shadow: inset 10px 0 40px 1000px rgba(25, 100, 100, 0.7);">
+    {{-- <div class="container-fluid" style=" margin-top: 1em; background-image: url('/uploads/front/8245.jpg'); background-size: 100%; box-shadow: inset 10px 0 40px 1000px rgba(25, 100, 100, 0.7);">
         <div class="row ">
             <div class=" bg-transparent border text-light" style="width: 45em; padding: 1em; margin: 0.3em;">
                  <i class="bi-droplet-half text-light d-flex justify-content-center" style="font-size: 2rem;"></i>
@@ -702,7 +702,7 @@
             </div>
 
         </div>
-    </div>
+    </div> --}}
 
     <div class="container-fluid bg-light" id="down" style="padding: 2em; margin-top: 1em;">
         <div class="container-fluid">
